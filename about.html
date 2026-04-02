@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Engineering Physics Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:opsz,wght@14..32,300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Cormorant Garamond', serif; background: #0a0c10; color: #eef2f8; }
+        .navbar { background: #03070f; border-bottom: 2px solid #1e3a5f; padding: 0.9rem 2rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+        .logo h2 { font-weight: 700; font-size: 1.7rem; background: linear-gradient(135deg, #ffffff, #6c9fd1); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .nav-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .nav-btn { background: transparent; border: none; font-family: 'Inter', sans-serif; padding: 0.5rem 1rem; border-radius: 30px; cursor: pointer; color: #ccdeee; }
+        .nav-btn:hover, .nav-btn.active { background: #2c628f; color: white; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+        .hero-card { background: #0b111b; border-radius: 2rem; padding: 2rem; border: 1px solid #1e3a5f; }
+        .hero-image { width: 100%; max-height: 200px; object-fit: cover; border-radius: 1.2rem; margin: 1rem 0; border: 1px solid #2c628f; }
+        .feature-list { display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 1.5rem 0; }
+        .feature-badge { background: #0f1a28; padding: 8px 18px; border-radius: 40px; font-family: 'Inter', sans-serif; font-size: 0.85rem; border: 1px solid #2c628f; }
+        footer { text-align: center; padding: 1.8rem; color: #7e95ae; border-top: 1px solid #1e3a5f; margin-top: 2rem; }
+        ul { margin: 1rem 0 1rem 2rem; color: #b8d0e8; }
+        li { margin: 0.5rem 0; }
+        @media (max-width: 768px) { .navbar { flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h2>Engineering Physics Lab</h2></div>
+        <div class="nav-links">
+            <a href="index.html"><button class="nav-btn">Home</button></a>
+            <a href="resistivity.html"><button class="nav-btn">Resistivity</button></a>
+            <a href="bragg.html"><button class="nav-btn">Bragg's Law</button></a>
+            <a href="youngs.html"><button class="nav-btn">Young's Modulus</button></a>
+            <a href="photon.html"><button class="nav-btn">Photon Energy</button></a>
+            <a href="newton.html"><button class="nav-btn">Newton's Rings</button></a>
+            <a href="hall.html"><button class="nav-btn">Hall Effect</button></a>
+            <a href="dielectric.html"><button class="nav-btn">Dielectric</button></a>
+            <a href="about.html"><button class="nav-btn active">About</button></a>
+            <a href="login.html"><button class="nav-btn">Login</button></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="hero-card">
+            <h2>About Engineering Physics Lab Suite</h2>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 200'%3E%3Crect width='800' height='200' fill='%23111a28'/%3E%3Ccircle cx='150' cy='100' r='40' stroke='%232c628f' stroke-width='2' fill='none'/%3E%3Cpath d='M220 60 L300 140 M300 60 L220 140' stroke='%233a7ca5' stroke-width='2'/%3E%3Crect x='400' y='75' width='100' height='50' stroke='%232c628f' fill='none'/%3E%3Ctext x='430' y='105' fill='%23b0c4de' font-family='monospace' font-size='14'%3ELab%3C/text%3E%3C/svg%3E" class="hero-image">
+            <p style="font-size:1.1rem;">This comprehensive web-based toolkit provides nine essential physics lab calculators used in engineering and applied physics curricula. Each module follows standard experimental formulas and delivers real-time results.</p>
+            
+            <h3 style="margin-top: 1.5rem;">Available Modules:</h3>
+            <ul>
+                <li><strong>Resistivity (Four-Probe)</strong> - Semiconductor analysis and sheet resistance</li>
+                <li><strong>Bragg's Law</strong> - X-ray diffraction d-spacing determination</li>
+                <li><strong>Young's Modulus</strong> - Beam bending method for elastic modulus</li>
+                <li><strong>Photon Energy</strong> - Planck-Einstein relation (eV & Joules)</li>
+                <li><strong>Newton's Rings</strong> - Radius of curvature of a lens</li>
+                <li><strong>Hall Effect</strong> - Carrier concentration & Hall coefficient</li>
+                <li><strong>Dielectric Constant</strong> - Relative permittivity measurement</li>
+            </ul>
+            
+            <div class="feature-list">
+                <span class="feature-badge">For B.Tech / MSc Physics</span>
+                <span class="feature-badge">Lab Ready Tools</span>
+                <span class="feature-badge">Real-time Results</span>
+                <span class="feature-badge">Dark Theme</span>
+                <span class="feature-badge">Serif Typography</span>
+            </div>
+            
+            <p style="margin-top: 1rem;">Designed for students, researchers, and lab instructors. All calculations follow standard physics laboratory formulas and provide instant feedback for experiment analysis.</p>
+        </div>
+    </div>
+    <footer>Precision tools for semiconductor physics, optics & material science | © 2025 Engineering Physics Lab</footer>
+</body>
+</html>

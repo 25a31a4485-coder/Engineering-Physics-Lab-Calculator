@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Engineering Physics Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:opsz,wght@14..32,300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Cormorant Garamond', serif; background: #0a0c10; color: #eef2f8; }
+        .navbar { background: #03070f; border-bottom: 2px solid #1e3a5f; padding: 0.9rem 2rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; position: sticky; top: 0; }
+        .logo h2 { font-weight: 700; font-size: 1.7rem; background: linear-gradient(135deg, #ffffff, #6c9fd1); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .nav-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .nav-btn { background: transparent; border: none; font-family: 'Inter', sans-serif; padding: 0.5rem 1rem; border-radius: 30px; cursor: pointer; color: #ccdeee; }
+        .nav-btn:hover, .nav-btn.active { background: #2c628f; color: white; }
+        .container { max-width: 1400px; margin: 2rem auto; padding: 0 1.5rem; }
+        .hero-card { background: #0b111b; border-radius: 2rem; padding: 2rem; border: 1px solid #1e3a5f; }
+        .hero-card h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero-image { width: 100%; max-height: 250px; object-fit: cover; border-radius: 1.2rem; margin: 1rem 0; border: 1px solid #2c628f; }
+        .feature-badge { background: #0f1a28; padding: 6px 16px; border-radius: 40px; font-family: 'Inter', sans-serif; font-size: 0.8rem; display: inline-block; margin: 0.25rem; border: 1px solid #2c628f; }
+        .calc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .calc-card { background: #0e141f; border-radius: 1.5rem; padding: 1.5rem; border: 1px solid #1e3a5f; }
+        .calc-card h3 { font-size: 1.4rem; color: #c9e2ff; border-left: 4px solid #2c628f; padding-left: 12px; margin-bottom: 1rem; }
+        .calc-action { background: #1e3a5f; color: white; font-family: 'Inter', sans-serif; border: none; padding: 10px; border-radius: 40px; width: 100%; cursor: pointer; margin-top: 1rem; }
+        footer { text-align: center; padding: 1.8rem; color: #7e95ae; border-top: 1px solid #1e3a5f; margin-top: 2rem; }
+        @media (max-width: 768px) { .navbar { flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h2>Engineering Physics Lab</h2></div>
+        <div class="nav-links">
+            <a href="index.html"><button class="nav-btn active">Home</button></a>
+            <a href="resistivity.html"><button class="nav-btn">Resistivity</button></a>
+            <a href="bragg.html"><button class="nav-btn">Bragg's Law</button></a>
+            <a href="youngs.html"><button class="nav-btn">Young's Modulus</button></a>
+            <a href="photon.html"><button class="nav-btn">Photon Energy</button></a>
+            <a href="newton.html"><button class="nav-btn">Newton's Rings</button></a>
+            <a href="hall.html"><button class="nav-btn">Hall Effect</button></a>
+            <a href="dielectric.html"><button class="nav-btn">Dielectric</button></a>
+            <a href="about.html"><button class="nav-btn">About</button></a>
+            <a href="login.html"><button class="nav-btn">Login</button></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="hero-card">
+            <h1>Engineering Physics Lab Calculator</h1>
+            <p style="font-size:1.2rem;">Complete suite for semiconductor physics, optics, crystallography, and material characterization.</p>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 250'%3E%3Crect width='800' height='250' fill='%23111a28'/%3E%3Ccircle cx='150' cy='125' r='50' stroke='%232c628f' stroke-width='2' fill='none'/%3E%3Cpath d='M250 75 L350 175 M350 75 L250 175' stroke='%233a7ca5' stroke-width='2'/%3E%3Crect x='450' y='95' width='120' height='60' stroke='%232c628f' fill='none'/%3E%3Ctext x='500' y='132' fill='%23b0c4de' font-family='monospace' font-size='14'%3EPhysics%3C/text%3E%3C/svg%3E" alt="Physics Lab" class="hero-image">
+            <div style="margin: 1.5rem 0;">
+                <span class="feature-badge">Four-Probe Resistivity</span>
+                <span class="feature-badge">Bragg's Diffraction</span>
+                <span class="feature-badge">Young's Modulus</span>
+                <span class="feature-badge">Newton's Rings</span>
+                <span class="feature-badge">Hall Coefficient</span>
+                <span class="feature-badge">Dielectric Constant</span>
+            </div>
+            <div class="calc-grid">
+                <div class="calc-card"><h3>Resistivity (4-Probe)</h3><p>Semiconductor characterization</p><a href="resistivity.html"><button class="calc-action">Open Calculator →</button></a></div>
+                <div class="calc-card"><h3>Bragg's Law (XRD)</h3><p>Crystal lattice d-spacing</p><a href="bragg.html"><button class="calc-action">Open Calculator →</button></a></div>
+                <div class="calc-card"><h3>Photon Energy</h3><p>Planck-Einstein relation</p><a href="photon.html"><button class="calc-action">Open Calculator →</button></a></div>
+            </div>
+        </div>
+    </div>
+    <footer>Precision tools for semiconductor physics, optics & material science | © 2025</footer>
+</body>
+</html>
